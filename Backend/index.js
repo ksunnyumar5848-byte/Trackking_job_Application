@@ -2,9 +2,12 @@ const express=require("express")
 require('dotenv').config();
 const app=express()
 
+const { connectDB}=require('./config/mongodb.js')
+
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+connectDB()
 
 app.get('/api/Health',(req,res)=>{
     res.json({
