@@ -34,8 +34,6 @@ app.use('/api/Auth',UserRouter)
 
 
 
-
-
 app.listen(process.env.PORT_NUMBER,()=>{
     console.log("server are the strat 💘💘💘💘💘")
 })

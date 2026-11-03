@@ -7,7 +7,7 @@ const {Register,Login}=require('../controler/user.controller.js')
 route.post('/register',Register)
 
 
-// route.post('/login',Login)
+route.post('/login',Login)
 
 
 module.exports=route
