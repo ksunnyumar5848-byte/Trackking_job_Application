@@ -22,6 +22,6 @@ let userSchema=mongoose.Schema({
     timestamp:true
 })
 
-let user=mongoose.model("user",userSchema)
+let User=mongoose.model("User",userSchema)
 
-module.exports=user
+module.exports=User
