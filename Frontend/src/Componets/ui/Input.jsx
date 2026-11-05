@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Input = ({label,type,placeholder}) => {
+
+const Input = ({label,type,placeholder,register,name}) => {
   
-    
+  
 
   return (
      <>
@@ -14,6 +15,8 @@ const Input = ({label,type,placeholder}) => {
                    <input  className='border px-2 py-2 rounded-md'
                       type={type}
                       placeholder={placeholder}
+                      {...register(name)}
+
                    />
                    
         </div>
